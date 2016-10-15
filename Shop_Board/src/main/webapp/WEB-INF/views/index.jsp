@@ -21,7 +21,6 @@
 			</security:authorize>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<%--     <security:authentication property="principal.password"/> --%>
 			<li><a><b><b>${authUser.login}</b></b></a></li>
 			<security:authorize access="isAuthenticated()">
 				<li><form:form action="logout" method="post"
